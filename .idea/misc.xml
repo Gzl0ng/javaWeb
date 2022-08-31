@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/pro01-javaweb-begin" />
+    <file type="web" url="file://$PROJECT_DIR$/pro02-javaweb-servlet" />
+    <file type="web" url="file://$PROJECT_DIR$/pro03-fruit-thymeleaf" />
+    <file type="web" url="file://$PROJECT_DIR$/pro04-fruit-thymeleaf02" />
+    <file type="web" url="file://$PROJECT_DIR$/pro05-fruit-thymeleaf03" />
+    <file type="web" url="file://$PROJECT_DIR$/pro06-fruit-keyword" />
+    <file type="web" url="file://$PROJECT_DIR$/pro07-fruit-mvc" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/pro01-javaweb-begin/pom.xml" />
+        <option value="$PROJECT_DIR$/pro02-javaweb-servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/pro03-fruit-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/pro04-fruit-thymeleaf02/pom.xml" />
+        <option value="$PROJECT_DIR$/pro11-fruit1.6-pagination/pom.xml" />
+        <option value="$PROJECT_DIR$/pro05-fruit-thymeleaf03/pom.xml" />
+        <option value="$PROJECT_DIR$/pro06-fruit-thymeleaf04/pom.xml" />
+        <option value="$PROJECT_DIR$/pro06-fruit-keyword/pom.xml" />
+        <option value="$PROJECT_DIR$/pro06-fruit-mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/pro07-fruit-mvc/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

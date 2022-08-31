@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pro-web" />
+        <module name="pro05-fruit-thymeleaf03" />
+        <module name="pro02-javaweb-servlet" />
+        <module name="pro03-fruit-thymeleaf" />
+        <module name="pro01-javaweb-begin" />
+        <module name="pro04-fruit-thymeleaf02" />
+        <module name="pro07-fruit-mvc" />
+        <module name="pro06-fruit-keyword" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jpa-springdata-04" target="1.8" />
+      <module name="pro05-fruit-pagination" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
