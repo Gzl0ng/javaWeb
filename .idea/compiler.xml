@@ -9,17 +9,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="pro-web" />
         <module name="pro05-fruit-thymeleaf03" />
+        <module name="pro10-fruit-mvc-controller" />
         <module name="pro02-javaweb-servlet" />
         <module name="pro03-fruit-thymeleaf" />
+        <module name="pro09-fruit-mvc-dispatcherServlet" />
         <module name="pro01-javaweb-begin" />
         <module name="pro04-fruit-thymeleaf02" />
         <module name="pro07-fruit-mvc" />
         <module name="pro06-fruit-keyword" />
+        <module name="pro08-fruit-mvc-reflect" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="jpa-springdata-04" target="1.8" />
-      <module name="pro05-fruit-pagination" target="1.8" />
-    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
   </component>
 </project>

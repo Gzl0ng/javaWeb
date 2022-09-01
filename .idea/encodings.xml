@@ -18,5 +18,11 @@
     <file url="file://$PROJECT_DIR$/pro06-fruit-keyword/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pro07-fruit-mvc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pro07-fruit-mvc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pro08-fruit-mvc-reflect/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pro08-fruit-mvc-reflect/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pro09-fruit-mvc-dispatcherServlet/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pro09-fruit-mvc-dispatcherServlet/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pro10-fruit-mvc-controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pro10-fruit-mvc-controller/src/main/resources" charset="UTF-8" />
   </component>
 </project>
