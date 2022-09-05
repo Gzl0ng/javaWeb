@@ -12,6 +12,8 @@
     <file type="web" url="file://$PROJECT_DIR$/pro08-fruit-mvc-reflect" />
     <file type="web" url="file://$PROJECT_DIR$/pro09-fruit-mvc-dispatcherServlet" />
     <file type="web" url="file://$PROJECT_DIR$/pro10-fruit-mvc-controller" />
+    <file type="web" url="file://$PROJECT_DIR$/pro11-fruit-mvc-service-ioc" />
+    <file type="web" url="file://$PROJECT_DIR$/pro12-servlet-api" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -30,6 +32,8 @@
         <option value="$PROJECT_DIR$/pro08-fruit-mvc-reflect/pom.xml" />
         <option value="$PROJECT_DIR$/pro09-fruit-mvc-dispatcherServlet/pom.xml" />
         <option value="$PROJECT_DIR$/pro10-fruit-mvc-controller/pom.xml" />
+        <option value="$PROJECT_DIR$/pro11-fruit-mvc-service-ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/pro12-servlet-api/pom.xml" />
       </list>
     </option>
   </component>

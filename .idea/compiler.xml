@@ -7,10 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pro-web" />
+        <module name="pro11-fruit-mvc-service-ioc" />
         <module name="pro05-fruit-thymeleaf03" />
         <module name="pro10-fruit-mvc-controller" />
         <module name="pro02-javaweb-servlet" />
+        <module name="pro12-servlet-api" />
         <module name="pro03-fruit-thymeleaf" />
         <module name="pro09-fruit-mvc-dispatcherServlet" />
         <module name="pro01-javaweb-begin" />
@@ -23,5 +24,20 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pro-web" options="" />
+      <module name="pro01-javaweb-begin" options="" />
+      <module name="pro02-javaweb-servlet" options="" />
+      <module name="pro03-fruit-thymeleaf" options="" />
+      <module name="pro04-fruit-thymeleaf02" options="" />
+      <module name="pro05-fruit-thymeleaf03" options="" />
+      <module name="pro06-fruit-keyword" options="" />
+      <module name="pro07-fruit-mvc" options="" />
+      <module name="pro08-fruit-mvc-reflect" options="" />
+      <module name="pro09-fruit-mvc-dispatcherServlet" options="-parameters" />
+      <module name="pro10-fruit-mvc-controller" options="-parameters" />
+      <module name="pro11-fruit-mvc-service-ioc" options="-parameters" />
+      <module name="pro12-servlet-api" options="" />
+    </option>
   </component>
 </project>
