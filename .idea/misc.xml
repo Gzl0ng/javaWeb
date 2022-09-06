@@ -14,6 +14,8 @@
     <file type="web" url="file://$PROJECT_DIR$/pro10-fruit-mvc-controller" />
     <file type="web" url="file://$PROJECT_DIR$/pro11-fruit-mvc-service-ioc" />
     <file type="web" url="file://$PROJECT_DIR$/pro12-servlet-api" />
+    <file type="web" url="file://$PROJECT_DIR$/pro13-filter-listener" />
+    <file type="web" url="file://$PROJECT_DIR$/pro14-fruit-mvc-transaction" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -34,6 +36,8 @@
         <option value="$PROJECT_DIR$/pro10-fruit-mvc-controller/pom.xml" />
         <option value="$PROJECT_DIR$/pro11-fruit-mvc-service-ioc/pom.xml" />
         <option value="$PROJECT_DIR$/pro12-servlet-api/pom.xml" />
+        <option value="$PROJECT_DIR$/pro14-fruit-mvc-transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/pro13-filter-listener/pom.xml" />
       </list>
     </option>
   </component>
