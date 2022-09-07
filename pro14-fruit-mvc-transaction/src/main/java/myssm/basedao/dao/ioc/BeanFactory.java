@@ -1,4 +1,4 @@
-package myssm.basedao.dao.io;
+package myssm.basedao.dao.ioc;
 
 /**
  * Author: guozhenglong

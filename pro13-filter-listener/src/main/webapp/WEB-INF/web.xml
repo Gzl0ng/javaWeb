@@ -12,4 +12,8 @@
 <!--        <filter-name>Demo01Filter</filter-name>-->
 <!--        <url-pattern>/demo01.do</url-pattern>-->
 <!--    </filter-mapping>-->
+    
+    <listener>
+        <listener-class>com.gzl0ng.listener.MyServletContextListener</listener-class>
+    </listener>
 </web-app>

@@ -1,5 +1,6 @@
-package myssm.basedao.dao.io;
+package myssm.basedao.dao.ioc;
 
+import com.gzl0ng.util.StringUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -14,6 +15,7 @@ import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Stack;
 
 /**
  * Author: guozhenglong
@@ -21,11 +23,18 @@ import java.util.Map;
  */
 public class ClassPathXmlApplicationContext implements BeanFactory{
     private Map<String,Object> beanMap = new HashMap();
-
+    private String path = "applicationContext.xml";
     public ClassPathXmlApplicationContext(){
+        this("applicationContext.xml");
+    }
+
+    public ClassPathXmlApplicationContext(String path){
         try {
-            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("applicationContext.xml");
-            String path = getClass().getClassLoader().getResource("/").getPath();
+            if (StringUtil.isEmpty(path)){
+                throw new RuntimeException("ioc容器的配置文件没有指定...");
+            }
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream(path);
+//            String path = getClass().getClassLoader().getResource("/").getPath();
             //1.创建DocumentBuilderFactory
             DocumentBuilderFactory documentBuilderFactory =DocumentBuilderFactory.newInstance();
             //2.创建DocumentBuilder对象

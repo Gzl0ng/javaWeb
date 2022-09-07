@@ -2,31 +2,16 @@ package com.gzl0ng.baseservlet;
 
 import com.gzl0ng.util.StringUtil;
 import myssm.basedao.dao.DispatcherServletException;
-import myssm.basedao.dao.io.BeanFactory;
-import myssm.basedao.dao.io.ClassPathXmlApplicationContext;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
+import myssm.basedao.dao.ioc.BeanFactory;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
-import java.io.InputStream;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Author: guozhenglong
@@ -43,7 +28,16 @@ public class DispatcherServlet extends ViewBaseServlet {
     @Override
     public void init() throws ServletException {
         super.init();
-        beanFactory = new ClassPathXmlApplicationContext();
+        //此前是在此处主动创建ioc容器的
+        //现在优化为从application作用域去获取
+//        beanFactory = new ClassPathXmlApplicationContext();
+        ServletContext application = getServletContext();
+        Object beanFactoryObj = application.getAttribute("beanFactory");
+        if (beanFactoryObj!=null){
+            beanFactory = (BeanFactory) beanFactoryObj;
+        }else {
+            throw new RuntimeException("IOc容器获取失败!");
+        }
     }
 
     @Override

@@ -32,7 +32,7 @@ public class OpenSessionViewFilter implements Filter {
                 TransactionManager.rollback();
                 System.out.println("回滚事务");
             } catch (SQLException ex) {
-                e.printStackTrace();
+                ex.printStackTrace();
             }
         }
     }
