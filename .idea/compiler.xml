@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="pro16-qqzone2" />
         <module name="pro11-fruit-mvc-service-ioc" />
         <module name="pro10-fruit-mvc-controller" />
         <module name="pro14-fruit-mvc-transaction" />

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--相当于定义这个文件的内容结构-->
+<!DOCTYPE beans [
+    <!ELEMENT beans (bean*)>
+    <!ELEMENT bean (property*)>
+    <!ELEMENT property (#PCDATA)>
+
+    <!ATTLIST bean id ID #REQUIRED>
+    <!ATTLIST bean class CDATA #IMPLIED>
+    <!ATTLIST property name CDATA #IMPLIED>
+    <!ATTLIST property ref IDREF #IMPLIED>
+]>
+
+<beans>
+    <bean id="userBasicDAO" class="com.gzl0ng.qqzone.dao.impl.UserBasicDAOImpl"/>
+    <bean id="topicDAO" class="com.gzl0ng.qqzone.dao.impl.TopicDAOImpl"/>
+
+    <bean id="userBasicService" class="com.gzl0ng.qqzone.service.impl.UserBasicServiceImpl">
+        <property name="userBasicDAO" ref="userBasicDAO"/>
+    </bean>
+
+    <bean id="topicService" class="com.gzl0ng.qqzone.service.impl.TopicServiceImpl">
+        <property name="topicDAO" ref="topicDAO"/>
+    </bean>
+
+    <bean id="user" class="com.gzl0ng.qqzone.controller.UserController">
+        <property name="userBasicService" ref="userBasicService"/>
+        <property name="topicService" ref="topicService"/>
+    </bean>
+    <bean id="page" class="com.gzl0ng.myssm.myspringmvc.PageController"/>
+
+</beans>
