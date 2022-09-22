@@ -8,7 +8,17 @@ public class User {
     private String email;
     private Integer role ;
 
+    private Cart cart;
+
     public User(){}
+
+    public Cart getCart() {
+        return cart;
+    }
+
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
 
     public User(Integer id) {
         this.id = id;

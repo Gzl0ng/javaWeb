@@ -93,16 +93,16 @@ public abstract class BaseDAO<T> {
             if(isMyType(typeName)){
                 Class typeNameClass = Class.forName(typeName);
                 switch (typeName){
-                    case "java.lang.Integer": propertyValue=typeNameClass.getDeclaredConstructor(Integer.class).newInstance(propertyValue);
-                    break;
+//                    case "java.lang.Integer": propertyValue=typeNameClass.getDeclaredConstructor(Integer.class).newInstance(propertyValue);
+//                    break;
                     case "java.lang.Double":propertyValue=(Double)propertyValue;
                     break;
-                    default:
+                    default:Constructor constructor = typeNameClass.getDeclaredConstructor(Integer.class);
+                        propertyValue = constructor.newInstance(propertyValue);
                 }
 
 
                 //假设typeName是"com.gzl0ng.qqzone.pojo.UserBasic"
-//                Class typeNameClass = Class.forName(typeName);
 //                Constructor constructor = typeNameClass.getDeclaredConstructor(Integer.class);
 //                propertyValue = constructor.newInstance(propertyValue);
             }
