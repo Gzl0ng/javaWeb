@@ -21,6 +21,8 @@
     <file type="web" url="file://$PROJECT_DIR$/pro17-qqzone3" />
     <file type="web" url="file://$PROJECT_DIR$/pro18-book" />
     <file type="web" url="file://$PROJECT_DIR$/pro19-book" />
+    <file type="web" url="file://$PROJECT_DIR$/pro20-cokkie-kaptcha-js" />
+    <file type="web" url="file://$PROJECT_DIR$/pro21-book-regist-cart" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -49,6 +51,8 @@
         <option value="$PROJECT_DIR$/pro17-qqzone3/pom.xml" />
         <option value="$PROJECT_DIR$/pro18-book/pom.xml" />
         <option value="$PROJECT_DIR$/pro19-book/pom.xml" />
+        <option value="$PROJECT_DIR$/pro20-cokkie-kaptcha-js/pom.xml" />
+        <option value="$PROJECT_DIR$/pro21-book-regist-cart/pom.xml" />
       </list>
     </option>
   </component>

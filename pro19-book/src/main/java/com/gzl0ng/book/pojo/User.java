@@ -1,5 +1,7 @@
 package com.gzl0ng.book.pojo;
 
+import java.util.List;
+
 //用户
 public class User {
     private Integer id ;
@@ -9,8 +11,16 @@ public class User {
     private Integer role ;
 
     private Cart cart;
-
+    private List<OrderBean> orderList;   //
     public User(){}
+
+    public List<OrderBean> getOrderList() {
+        return orderList;
+    }
+
+    public void setOrderList(List<OrderBean> orderList) {
+        this.orderList = orderList;
+    }
 
     public Cart getCart() {
         return cart;

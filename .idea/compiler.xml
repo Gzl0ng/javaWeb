@@ -11,12 +11,14 @@
         <module name="pro11-fruit-mvc-service-ioc" />
         <module name="pro17-qqzone3" />
         <module name="pro18-book" />
+        <module name="pro20-cokkie-kaptcha-js" />
         <module name="pro10-fruit-mvc-controller" />
         <module name="pro14-fruit-mvc-transaction" />
         <module name="pro12-servlet-api" />
         <module name="pro09-fruit-mvc-dispatcherServlet" />
         <module name="pro13-filter-listener" />
         <module name="pro15-qqzone1" />
+        <module name="pro21-book-regist-cart" />
         <module name="pro05-fruit-thymeleaf03" />
         <module name="pro02-javaweb-servlet" />
         <module name="pro03-fruit-thymeleaf" />
@@ -48,6 +50,7 @@
       <module name="pro13-filter-listener" options="-parameters" />
       <module name="pro15-qqzone1" options="-parameters" />
       <module name="pro18-book" options="-parameters" />
+      <module name="pro20-cokkie-kaptcha-js" options="-parameters" />
     </option>
   </component>
 </project>
