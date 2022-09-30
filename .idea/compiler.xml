@@ -20,6 +20,8 @@
         <module name="pro15-qqzone1" />
         <module name="pro21-book-regist-cart" />
         <module name="pro05-fruit-thymeleaf03" />
+        <module name="pro22-vue-axios-json" />
+        <module name="pro23-book-vue-axios" />
         <module name="pro02-javaweb-servlet" />
         <module name="pro03-fruit-thymeleaf" />
         <module name="pro19-book" />
@@ -51,6 +53,7 @@
       <module name="pro15-qqzone1" options="-parameters" />
       <module name="pro18-book" options="-parameters" />
       <module name="pro20-cokkie-kaptcha-js" options="-parameters" />
+      <module name="pro22-vue-axios-json" options="" />
     </option>
   </component>
 </project>

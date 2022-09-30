@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-model="http://www.w3.org/1999/xhtml"
+      xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>04.演js中的字符串和Object互转的API</title>
+    <script language="JavaScript" src="script/vue.js"></script>
+    <script language="JavaScript" src="script/axios.min.js"></script>
+    <script language="JavaScript">
+
+            function hello01(){
+                /*//1.js string -> js object
+                var str = "{\"uname\":\"lina\",\"age\":\"20\"}";
+                var user = JSON.parse(str)
+                alert(typeof user);
+                alert(user.uname+"_"+user.age);*/
+
+                //2.js object -> js string
+                var user = {"uname":"lina","age":99};
+                alert(typeof user);
+                var userStr = JSON.stringify(user);
+                alert(typeof userStr);
+                alert(userStr);
+            }
+
+    </script>
+</head>
+<body>
+    <div id="div0">
+        <input type="button" onclick="hello01()" value="确定"/>
+    </div>
+</body>
+</html>

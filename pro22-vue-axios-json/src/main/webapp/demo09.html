@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-model="http://www.w3.org/1999/xhtml"
+      xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>01.演示Axios发送普通的参数</title>
+    <script language="JavaScript" src="script/vue.js"></script>
+    <script language="JavaScript" src="script/axios.min.js"></script>
+    <script language="JavaScript">
+
+        function hello(){
+            person.sayHello();
+        }
+        window.onload=function (){
+            var vue = new Vue({
+                "el":"#div0",
+                data:{
+                   uname:"lina",
+                    pwd:"ok"
+                },
+                methods:{
+                    axios01:function (){
+                        axios({
+                            method:"POST",
+                            url:"axios01.do",
+                            params:{
+                                uname:vue.uname,
+                                pwd:vue.pwd
+                            }
+                        }).
+                        then(function (value){
+                            console.log(value);
+                        }).
+                        catch(function (reason){
+                            console.log(reason)
+                        });
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="div0">
+        uname:<input type="text" v-model:value="uname"/><br/>
+        pwd:<input type="text" v-model:value="pwd"/><br/>
+        <input type="button" @click="axios01" value="发送一个带普通请求参数的请求"/>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-model="http://www.w3.org/1999/xhtml"
+      xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>03.演示Axios发送异步请求给服务器，服务器响应json格式的数据</title>
+    <script language="JavaScript" src="script/vue.js"></script>
+    <script language="JavaScript" src="script/axios.min.js"></script>
+    <script language="JavaScript">
+
+        function hello(){
+            person.sayHello();
+        }
+        window.onload=function (){
+            var vue = new Vue({
+                "el":"#div0",
+                data:{
+                   uname:"lina",
+                    pwd:"ok"
+                },
+                methods:{
+                    axios03:function (){
+                        axios({
+                            method:"POST",
+                            url:"axios03.do",
+                            data: {
+                                uname:vue.uname,
+                                pwd:vue.pwd
+                            }
+                        }).
+                        then(function (value){
+                            var data = value.data;
+                            //响应成功的data对应的数据
+                            //{uname:"鸠摩智",pwd:"ok"}
+                            vue.uname=data.uname;
+                            vue.pwd=data.pwd;
+
+                            //此处返回的data返回的是js object，因此可以直接点出属性
+                            //如果我们获取的是一个字符串:"{uname:\"鸠摩智\",pwd:\"ok\"}"
+
+                            //js语言中 也有字符串和js对象之间互转的api
+                            //String JSON.stringify(object) object->str
+                            //Object JSON.parse(str)  str->object
+                        }).
+                        catch(function (reason){
+                            console.log(reason)
+                        });
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="div0">
+        uname:<input type="text" v-model:value="uname"/><br/>
+        pwd:<input type="text" v-model:value="pwd"/><br/>
+        <input type="button" @click="axios03" value="发送一个json的异步请求"/>
+    </div>
+</body>
+</html>

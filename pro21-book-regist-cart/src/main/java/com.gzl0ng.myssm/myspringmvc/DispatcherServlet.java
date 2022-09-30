@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
@@ -101,7 +102,12 @@ public class DispatcherServlet extends ViewBaseServlet{
                     if(methodReturnStr.startsWith("redirect:")){        //比如：  redirect:fruit.do
                         String redirectStr = methodReturnStr.substring("redirect:".length());
                         response.sendRedirect(redirectStr);
-                    }else{
+                    }else if(methodReturnStr.startsWith("json:")){
+                        String jsonStr = methodReturnStr.substring("json:".length());
+                        PrintWriter out = response.getWriter();
+                        out.print(jsonStr);
+                        out.flush();
+                    } else{
                         super.processTemplate(methodReturnStr,request,response);    // 比如：  "edit"
                     }
                 }

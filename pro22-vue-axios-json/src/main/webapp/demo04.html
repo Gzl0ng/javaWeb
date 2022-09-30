@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-model="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript" src="script/vue.js"></script>
+
+    <script language="JavaScript">
+
+        function hello(){
+            person.sayHello();
+        }
+        window.onload=function (){
+            var vue = new Vue({
+                "el":"#div0",
+                data:{
+                    num:"2",
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="div0">
+        <input type="text" v-model="num"/>
+<!--        v-if和v-else之间不能有其它节点-->
+        <div v-if="num%2==0" style="width: 200px;height: 200px;background-color:chartreuse;">&nbsp;</div>
+<!--        <br/>-->
+        <div v-else="num%2==0" style="width: 200px;height: 200px;background-color:coral;">&nbsp;</div>
+
+
+<!--        v-show  用display控制，实际还在-->
+        <div v-show="num%2==0" style="width: 200px;height: 200px;background-color:blueviolet;">&nbsp;</div>
+    </div>
+</body>
+</html>

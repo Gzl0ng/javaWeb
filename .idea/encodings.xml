@@ -46,5 +46,9 @@
     <file url="file://$PROJECT_DIR$/pro20-cokkie-kaptcha-js/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pro21-book-regist-cart/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pro21-book-regist-cart/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pro22-vue-axios-json/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pro22-vue-axios-json/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pro23-book-cart-vue-axios/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pro23-book-cart-vue-axios/src/main/resources" charset="UTF-8" />
   </component>
 </project>

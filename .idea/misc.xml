@@ -23,6 +23,8 @@
     <file type="web" url="file://$PROJECT_DIR$/pro19-book" />
     <file type="web" url="file://$PROJECT_DIR$/pro20-cokkie-kaptcha-js" />
     <file type="web" url="file://$PROJECT_DIR$/pro21-book-regist-cart" />
+    <file type="web" url="file://$PROJECT_DIR$/pro22-vue-axios-json" />
+    <file type="web" url="file://$PROJECT_DIR$/pro23-book-cart-vue-axios" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -53,6 +55,8 @@
         <option value="$PROJECT_DIR$/pro19-book/pom.xml" />
         <option value="$PROJECT_DIR$/pro20-cokkie-kaptcha-js/pom.xml" />
         <option value="$PROJECT_DIR$/pro21-book-regist-cart/pom.xml" />
+        <option value="$PROJECT_DIR$/pro22-vue-axios-json/pom.xml" />
+        <option value="$PROJECT_DIR$/pro23-book-cart-vue-axios/pom.xml" />
       </list>
     </option>
   </component>

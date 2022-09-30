@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-model="http://www.w3.org/1999/xhtml"
+      xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript" src="script/vue.js"></script>
+
+    <script language="JavaScript">
+
+        function hello(){
+            person.sayHello();
+        }
+        window.onload=function (){
+            var vue = new Vue({
+                "el":"#div0",
+                data:{
+                    msg:"hello world!"
+                },
+                methods:{
+                    myReverse:function (){
+                        this.msg = this.msg.split(" ").reverse().join(" ");
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="div0">
+      <span>{{msg}}</span>
+<!--        myReverse不能加括号，不然就是执行后的返回值-->
+<!--        v-on可以省略，保存@click v-on:click表示绑定点击事件-->
+<!--        <input type="button" value="反转" v-on:click="myReverse"/>-->
+        <input type="button" value="反转" @click="myReverse"/>
+    </div>
+</body>
+</html>
